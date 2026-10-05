@@ -4,6 +4,7 @@ import { useState, useRef } from 'react';
 import PortadaSection from './portada/portada';
 import Tiempo from './tiempo/Tiempo';
 import Lugar from './lugar/Lugar';
+import Gifts from './regalos/Gifts';
 
 export default function Home() {
   const [showMainContent, setShowMainContent] = useState(false);
@@ -55,9 +56,8 @@ export default function Home() {
             src="/intro.mp4"
             playsInline
             onEnded={handleVideoEnd}
-            className={`w-full h-full object-cover transition-opacity duration-700 ${
-              hasStarted ? 'opacity-100' : 'opacity-20'
-            }`}
+            className={`w-full h-full object-cover transition-opacity duration-700 ${hasStarted ? 'opacity-100' : 'opacity-20'
+              }`}
           />
 
           {/* Botón para saltar video */}
@@ -78,20 +78,24 @@ export default function Home() {
 
           {/* SECCIÓN 1: PORTADA */}
           <section id="portada" className="min-h-screen flex flex-col items-center justify-center pt-4 px-6 text-center bg-rose-50/50">
-            <PortadaSection/>
+            <PortadaSection />
           </section>
 
           {/* SECCIÓN 2: DETALLES DE LA BODA */}
           <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
-            <Tiempo/>
+            <Tiempo />
           </section>
 
           {/* SECCIÓN 3: UBICACIÓN */}
           <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
-            <Lugar/>
+            <Lugar />
           </section>
 
-          
+          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
+            <Gifts />
+          </section>
+
+
           {/* SECCIÓN 4: CONFIRMACIÓN (RSVP) */}
           <section id="confirmacion" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
             <h2 className="text-2xl md:text-3xl font-serif text-slate-800 mb-2">Confirmar Asistencia</h2>
