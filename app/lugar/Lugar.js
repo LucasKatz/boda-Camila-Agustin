@@ -6,6 +6,7 @@ export default function Lugar() {
     'https://maps.app.goo.gl/dAc5LxK2xMLVkb4c7'; 
 
   return (
+
     <section className="relative w-full bg-white flex items-center justify-center px-4 py-12 overflow-hidden">
       {/* Tarjeta con Degradado ocupando el 95% del alto */}
       <div className="relative w-full max-w-sm min-h-[70vh] bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-3xl pt-24 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-between">

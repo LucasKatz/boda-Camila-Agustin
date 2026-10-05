@@ -5,6 +5,11 @@ import PortadaSection from './portada/portada';
 import Tiempo from './tiempo/Tiempo';
 import Lugar from './lugar/Lugar';
 import Gifts from './regalos/Gifts';
+import DressCode from './vestimenta/vestimenta';
+import Dreams from './sueños/sueños';
+import Attendance from './attendance/attendance';
+import Espera from './espera/Espera';
+import Celebracion from './celebracion/Celebracion';
 
 export default function Home() {
   const [showMainContent, setShowMainContent] = useState(false);
@@ -95,22 +100,29 @@ export default function Home() {
             <Gifts />
           </section>
 
-
-          {/* SECCIÓN 4: CONFIRMACIÓN (RSVP) */}
-          <section id="confirmacion" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
-            <h2 className="text-2xl md:text-3xl font-serif text-slate-800 mb-2">Confirmar Asistencia</h2>
-            <p className="text-xs text-slate-500 mb-6 max-w-xs">
-              Por favor confirma tu presencia antes del 1 de Noviembre.
-            </p>
-            <a
-              href="https://wa.me/1234567890?text=Hola!%20Quiero%20confirmar%20mi%20asistencia%20a%20la%20boda"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full max-w-md py-4 bg-emerald-600 text-white rounded-2xl text-sm font-semibold shadow-lg shadow-emerald-200 hover:bg-emerald-700 transition active:scale-98 flex items-center justify-center gap-2"
-            >
-              Confirmar por WhatsApp
-            </a>
+          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
+            <Celebracion />
           </section>
+
+          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
+            <DressCode />
+          </section>
+
+          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
+            <Dreams />
+          </section>
+
+          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
+            <Attendance/>
+          </section>
+
+          
+          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
+            <Espera/>
+          </section>
+
+
+
         </div>
       )}
     </main>
