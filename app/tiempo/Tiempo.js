@@ -4,7 +4,7 @@ export default function Tiempo() {
   return (
     <section className="relative w-full bg-white flex items-center justify-center px-4 py-12 overflow-hidden">
       {/* Tarjeta con Degradado ocupando el 100% del alto (igual a Lugar) */}
-      <div className="relative w-full max-w-sm min-h-[100vh] bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-3xl pt-24 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-between">
+      <div className="relative w-full max-w-sm min-h-[70vh] bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-3xl pt-24 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-between">
         
         {/* Adorno superior de Limones (limones3.png) sobresaliendo del borde */}
         <div className="absolute -top-12 sm:-top-16 left-1/2 -translate-x-1/2 w-full max-w-[220px] pointer-events-none z-10">
@@ -36,12 +36,12 @@ export default function Tiempo() {
           </div>
 
           {/* Título ¿CUÁNDO? */}
-          <h2 className="text-3xl sm:text-4xl font-serif tracking-widest text-[#354f2a] uppercase mb-6">
+          <h2 className="text-3xl sm:text-4xl font-serif tracking-widest text-[#354f2a] uppercase mb-2">
             ¿CUÁNDO?
           </h2>
 
           {/* Fecha y Día */}
-          <div className="mb-6">
+          <div className="mb-2">
             <p className="text-2xl sm:text-3xl font-serif text-[#2a3026]">
               11 de Diciembre 2026
             </p>
@@ -52,7 +52,7 @@ export default function Tiempo() {
         </div>
 
         {/* Bloque Inferior: Horario */}
-        <div className="w-full pt-6">
+        <div className="w-full pt-2">
           <p className="text-xl sm:text-2xl font-serif tracking-wide text-[#2a3026]">
             HORARIO: <span className="font-normal">19 a 24 hs</span>
           </p>
