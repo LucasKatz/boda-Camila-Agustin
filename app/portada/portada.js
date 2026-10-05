@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react';
 
 export default function PortadaSection() {
-  // Fecha objetivo de la boda (15 de Noviembre de 2026)
-  const targetDate = new Date('2026-11-15T18:00:00').getTime();
+  // Fecha objetivo de la boda: 11 de Diciembre de 2026 a las 19:00 hs
+  const targetDate = new Date('2026-12-11T19:00:00').getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     dias: 0,
@@ -40,7 +40,7 @@ export default function PortadaSection() {
       {/* Capa de oscurecimiento suave para legibilidad */}
       <div className="absolute inset-0 bg-black/20 z-0" />
 
-      {/* Contenedor de la Placa - Posicionado más abajo para liberar los rostros */}
+      {/* Contenedor de la Placa (Sin fondo) */}
       <div className="relative z-10 w-full flex justify-center items-center mt-[45vh] mb-4">
         <img
           src="/placa.png"
@@ -50,8 +50,8 @@ export default function PortadaSection() {
       </div>
 
       {/* Tarjeta del Countdown */}
-      <div className="relative z-10 w-full max-w-[340px] bg-[#f5e8c7]/95 backdrop-blur-md rounded-2xl p-4 border border-[#8c821d]/40 shadow-2xl">
-        <p className="text-[11px] uppercase tracking-[0.2em] text-[#101e3d] font-bold mb-2.5">
+      <div className="relative z-10 w-full max-w-[340px]">
+        <p className="text-[11px] uppercase tracking-[0.2em] text-[#8c821d] font-bold mb-2.5">
           Faltan muy pocos días
         </p>
 
