@@ -77,7 +77,7 @@ export default function Home() {
 
 
           {/* SECCIÓN 1: PORTADA */}
-          <section id="portada" className="min-h-screen flex flex-col items-center justify-center pt-16 px-6 text-center bg-rose-50/50">
+          <section id="portada" className="min-h-screen flex flex-col items-center justify-center px-6 text-center bg-rose-50/50">
             <PortadaSection/>
           </section>
 
