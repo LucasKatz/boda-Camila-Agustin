@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Lugar() {
   const googleMapsUrl =
-    'https://maps.google.com/?q=Quinta+La+Soledad+Ezeiza'; // Reemplaza con tu URL o coordenadas de Google Maps
+    'https://maps.app.goo.gl/dAc5LxK2xMLVkb4c7'; 
 
   return (
     <section className="relative w-full bg-white flex items-center justify-center px-4 py-12 overflow-hidden">
@@ -51,12 +51,12 @@ export default function Lugar() {
 
           {/* Nombre de la Salón / Quinta */}
           <h3 className="text-2xl sm:text-3xl font-serif text-[#2a3026] mb-2">
-            Quinta "La Soledad"
+            Simple Eventos
           </h3>
 
           {/* Dirección */}
           <p className="text-base font-serif text-[#4a5244] leading-relaxed max-w-[260px]">
-            Mariano Castex 3232, Canning, Provincia de Buenos Aires
+            Chivilcoy 452, Floresta <br></br> CABA
           </p>
         </div>
 
