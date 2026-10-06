@@ -5,9 +5,9 @@ export default function Espera() {
     <section className="relative w-full bg-white flex flex-col items-center justify-center px-4 py-12 overflow-hidden text-center">
       
       {/* Contenedor de la Imagen Centrara (placa2.jpeg) */}
-      <div className="relative w-full max-w-sm rounded-3xl overflow-hidden shadow-xl border border-[#e2d0ab]/50 mb-8">
+      <div className="relative w-full max-w-sm  mb-8">
         <img
-          src="/placa2.jpeg"
+          src="/placa2.png"
           alt="Mensaje final"
           className="w-full h-auto object-cover"
         />

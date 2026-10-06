@@ -72,7 +72,7 @@ export default function Lugar() {
             href={googleMapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block w-full max-w-[260px] bg-[#3b571f] hover:bg-[#283d20] text-white font-serif text-sm tracking-wider uppercase py-3.5 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
+            className="inline-block w-full max-w-[180px] bg-[#000a48] hover:bg-[#283d20] text-white font-serif text-sm tracking-wider uppercase py-3.5 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
           >
             Cómo llegar
           </Link>
