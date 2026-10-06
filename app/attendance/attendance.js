@@ -1,13 +1,17 @@
 'use client';
 
 export default function Attendance() {
+  const email = "camiceriani93@gmail.com";
+  const subject = encodeURIComponent("Confirmación de Asistencia");
+  const body = encodeURIComponent("¡Hola! Confirmo mi asistencia para la celebración.");
+
   return (
     <section className="relative w-full bg-white flex items-center justify-center px-4 py-12 overflow-hidden h-[110vh]">
       {/* Tarjeta con Degradado */}
       <div className="relative w-full max-w-sm min-h-[70vh] bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-3xl pt-24 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-center">
         
-        {/* Adorno de Limones (limones3.png) ubicado arriba a la derecha */}
-        <div className="absolute -top-16  w-36 sm:w-44 pointer-events-none z-10">
+        {/* Adorno de Limones (limones2.png) ubicado arriba al centro */}
+        <div className="absolute -top-16 w-36 sm:w-44 pointer-events-none z-10">
           <img
             src="/limones2.png"
             alt="Adorno de limones"
@@ -15,16 +19,20 @@ export default function Attendance() {
           />
         </div>
 
-        {/* Bloque Principal: Ícono, Título y Texto */}
+        {/* Bloque Principal */}
         <div className="flex flex-col items-center w-full">
-         
-
-          {/* Título DRESS CODE */}
-          <h2 className="text-3xl sm:text-4xl font-serif tracking-widest text-[#354f2a] uppercase mb-6">
+          {/* Título CONFIRMAR ASISTENCIA */}
+          <h2 className="text-3xl sm:text-4xl font-serif tracking-widest text-[#354f2a] uppercase mb-8">
             CONFIRMAR ASISTENCIA
           </h2>
 
-          
+          {/* Botón Asistiré */}
+          <a
+            href={`mailto:${email}?subject=${subject}&body=${body}`}
+            className="inline-block w-full max-w-[220px] bg-[#354f2a] hover:bg-[#2a3026] text-white font-serif tracking-wider text-lg py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform active:scale-95"
+          >
+            Asistiré
+          </a>
         </div>
       </div>
     </section>

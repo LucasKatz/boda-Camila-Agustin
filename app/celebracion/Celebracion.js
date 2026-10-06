@@ -56,7 +56,7 @@ export default function Celebracion() {
         </div>
 
         {/* Contenedor de la Foto de la pareja */}
-        <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-md border border-[#e2d0ab]/40">
+        <div className="relative w-full aspect-[4/5] rounded-2xl overflow-visible shadow-md border border-[#e2d0ab]/40">
           <img
             src="/PHOTO-1.jpg" 
             alt="Pareja"
