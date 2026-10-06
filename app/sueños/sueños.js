@@ -5,7 +5,7 @@ export default function Dreams() {
     <section className="relative w-full bg-white flex flex-col items-center justify-center px-4 py-12 overflow-hidden h-[150vh]">
       {/* Texto superior sobre el fondo blanco */}
       <div className="max-w-md text-center mb-10 px-2">
-        <p className="text-xl sm:text-2xl font-serif text-[#2a3026] leading-relaxed italic mb-8">
+        <p className="text-xl sm:text-2xl font-serif text-[#000a48] leading-relaxed italic mb-8">
           "Los sueños se cumplen mejor cuando se comparten. Te espero para crear recuerdos inolvidables juntos."
         </p>
       </div>
@@ -25,7 +25,7 @@ export default function Dreams() {
         {/* Imagen centrada dentro de la tarjeta */}
         <div className="relative w-full h-full max-h-[85%] rounded-2xl overflow-hidden shadow-md border border-[#e2d0ab]/40">
           <img
-            src="/PHOTO-2.jpg" // Reemplaza por la ruta de tu foto
+            src="/PHOTO-2.jpg" 
             alt="Imagen centrada"
             className="w-full h-full object-cover"
           />

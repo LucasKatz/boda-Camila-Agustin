@@ -51,14 +51,14 @@ export default function PortadaSection() {
 
       {/* Tarjeta del Countdown */}
       <div className="relative z-10 w-full max-w-[340px]">
-        <p className="text-[11px] uppercase tracking-[0.2em] text-[#8c821d] font-bold mb-2.5">
+        <p className="text-[11px] uppercase tracking-[0.2em] text-[#b39a69] font-bold mb-2.5">
           Faltan muy pocos días
         </p>
 
         {/* Rejilla de tiempo optimizada para touch/celulares */}
         <div className="grid grid-cols-4 gap-1.5">
-          <div className="flex flex-col items-center justify-center bg-white/70 py-2 rounded-xl border border-[#8c821d]/20">
-            <span className="text-xl sm:text-2xl font-black text-[#8c821d] leading-none">
+          <div className="flex flex-col items-center justify-center bg-white/70 py-2 rounded-xl border border-[#b39a69]/20">
+            <span className="text-xl sm:text-2xl font-black text-[#b39a69] leading-none">
               {timeLeft.dias}
             </span>
             <span className="text-[9px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">
@@ -66,8 +66,8 @@ export default function PortadaSection() {
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center bg-white/70 py-2 rounded-xl border border-[#8c821d]/20">
-            <span className="text-xl sm:text-2xl font-black text-[#8c821d] leading-none">
+          <div className="flex flex-col items-center justify-center bg-white/70 py-2 rounded-xl border border-[#b39a69]/20">
+            <span className="text-xl sm:text-2xl font-black text-[#b39a69] leading-none">
               {timeLeft.horas}
             </span>
             <span className="text-[9px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">
@@ -75,8 +75,8 @@ export default function PortadaSection() {
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center bg-white/70 py-2 rounded-xl border border-[#8c821d]/20">
-            <span className="text-xl sm:text-2xl font-black text-[#8c821d] leading-none">
+          <div className="flex flex-col items-center justify-center bg-white/70 py-2 rounded-xl border border-[#b39a69]/20">
+            <span className="text-xl sm:text-2xl font-black text-[#b39a69] leading-none">
               {timeLeft.minutos}
             </span>
             <span className="text-[9px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">
@@ -84,8 +84,8 @@ export default function PortadaSection() {
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center bg-white/70 py-2 rounded-xl border border-[#8c821d]/20">
-            <span className="text-xl sm:text-2xl font-black text-[#8c821d] leading-none">
+          <div className="flex flex-col items-center justify-center bg-white/70 py-2 rounded-xl border border-[#b39a69]/20">
+            <span className="text-xl sm:text-2xl font-black text-[#b39a69] leading-none">
               {timeLeft.segundos}
             </span>
             <span className="text-[9px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">

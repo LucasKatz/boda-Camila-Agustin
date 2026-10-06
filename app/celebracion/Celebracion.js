@@ -7,7 +7,7 @@ export default function Celebracion() {
       {/* Ícono de Fiesta / Lanzador de Confeti sobre el fondo blanco */}
       <div className="mb-6">
         <svg
-          className="w-40 h-40 text-[#0f172a]"
+          className="w-40 h-40 text-[#000a48]"
           fill="none"
           stroke="currentColor"
           strokeWidth="1.5"
@@ -47,10 +47,10 @@ export default function Celebracion() {
         
         {/* Encabezado dentro de la tarjeta */}
         <div className="mb-6">
-          <p className="text-xl sm:text-2xl font-serif text-[#0f172a] italic">
+          <p className="text-xl sm:text-2xl font-serif text-[#000a48] italic">
             Vení a celebrar
           </p>
-          <h2 className="text-3xl sm:text-4xl font-serif text-[#0f172a] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-serif text-[#000a48] tracking-tight">
             nuestro amor!
           </h2>
         </div>

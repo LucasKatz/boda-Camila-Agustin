@@ -20,7 +20,7 @@ export default function DressCode() {
           {/* Ícono de Diamante (orientación correcta) */}
           <div className="mb-3 mt-4">
             <svg
-              className="w-14 h-14 text-[#354f2a]"
+              className="w-14 h-14 text-[#000a48]"
               fill="none"
               stroke="currentColor"
               strokeWidth="1.5"
@@ -41,15 +41,15 @@ export default function DressCode() {
           </div>
 
           {/* Título DRESS CODE */}
-          <h2 className="text-3xl sm:text-4xl font-serif tracking-widest text-[#354f2a] uppercase mb-6">
+          <h2 className="text-3xl sm:text-4xl font-serif tracking-widest text-[#000a48] uppercase mb-6">
             DRESS CODE
           </h2>
 
           {/* Texto Descriptivo */}
-          <div className="text-2xl sm:text-3xl font-serif text-[#2a3026]">
+          <div className="text-2xl sm:text-3xl font-serif text-[#000a48]">
             Elegante Sport
           </div>
-          <p className="text-lg font-serif text-[#4a5244] mt-2 font-light italic max-w-[240px]">
+          <p className="text-lg font-serif text-[#000a48] mt-2 font-light italic max-w-[240px]">
             ¡Animate a ponerte algo de color!
           </p>
         </div>

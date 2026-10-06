@@ -20,7 +20,7 @@ export default function Gifts() {
           {/* Ícono de Regalo */}
           <div className="mb-3">
             <svg
-              className="w-14 h-14 text-[#0f172a]"
+              className="w-14 h-14 text-[#000a48]"
               fill="none"
               stroke="currentColor"
               strokeWidth="1.5"
@@ -36,12 +36,12 @@ export default function Gifts() {
           </div>
 
           {/* Título REGALOS */}
-          <h2 className="text-3xl sm:text-4xl font-serif tracking-widest text-[#0f172a] uppercase mb-6">
+          <h2 className="text-3xl sm:text-4xl font-serif tracking-widest text-[#000a48] uppercase mb-6">
             REGALOS
           </h2>
 
           {/* Texto del adjunto */}
-          <div className="space-y-2 text-[#2a3026] font-serif italic text-lg sm:text-xl leading-snug max-w-[280px]">
+          <div className="space-y-2 text-[#000a48] font-serif italic text-lg sm:text-xl leading-snug max-w-[280px]">
             <p>Nos vamos de viaje</p>
             <p>a comenzar nuestra aventura</p>
             <p>de recién casados...</p>
@@ -53,7 +53,7 @@ export default function Gifts() {
 
         {/* Bloque Inferior: Alias */}
         <div className="w-full pt-6">
-          <p className="text-xl sm:text-2xl font-serif text-[#2a3026]">
+          <p className="text-xl sm:text-2xl font-serif text-[#000a48]">
             Alias: <span className="underline font-normal">agusycamis.mp</span>
           </p>
         </div>

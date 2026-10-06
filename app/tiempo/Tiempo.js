@@ -36,16 +36,16 @@ export default function Tiempo() {
           </div>
 
           {/* Título ¿CUÁNDO? */}
-          <h2 className="text-3xl sm:text-4xl font-serif tracking-widest text-[#354f2a] uppercase mb-2">
+          <h2 className="text-3xl sm:text-4xl font-serif tracking-widest text-[#3b571f] uppercase mb-2">
             ¿CUÁNDO?
           </h2>
 
           {/* Fecha y Día */}
           <div className="mb-2">
-            <p className="text-2xl sm:text-3xl font-serif text-[#2a3026]">
+            <p className="text-2xl sm:text-3xl font-serif text-[#000a48]">
               11 de Diciembre 2026
             </p>
-            <p className="text-lg font-serif text-[#4a5244] mt-1 font-light italic">
+            <p className="text-lg font-serif text-[#000a48] mt-1 font-light italic">
               (Viernes)
             </p>
           </div>
@@ -53,7 +53,7 @@ export default function Tiempo() {
 
         {/* Bloque Inferior: Horario */}
         <div className="w-full pt-2">
-          <p className="text-xl sm:text-2xl font-serif tracking-wide text-[#2a3026]">
+          <p className="text-xl sm:text-2xl font-serif tracking-wide text-[#000a48]">
             HORARIO: <span className="font-normal">19 a 24 hs</span>
           </p>
         </div>
