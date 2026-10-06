@@ -7,7 +7,7 @@ export default function Gifts() {
       <div className="relative w-full max-w-sm min-h-[75vh] bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-3xl pt-20 pb-16 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-between">
         
         {/* Imagen de Limones Superior (limones4.png) sobresaliendo arriba a la izquierda */}
-        <div className="absolute -top-16 -left-16 w-56 sm:w-56 pointer-events-none z-10">
+        <div className="absolute -top-16 -left-8 w-56 sm:w-56 pointer-events-none z-10">
           <img
             src="/limones4.png"
             alt="Adorno de limones superior"
