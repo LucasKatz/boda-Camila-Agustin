@@ -1,5 +1,36 @@
-export default function Dreams(){
+'use client';
 
-    <h1>Dreams</h1>
+export default function Dreams() {
+  return (
+    <section className="relative w-full bg-white flex flex-col items-center justify-center px-4 py-12 overflow-hidden h-[150vh]">
+      {/* Texto superior sobre el fondo blanco */}
+      <div className="max-w-md text-center mb-10 px-2">
+        <p className="text-xl sm:text-2xl font-serif text-[#2a3026] leading-relaxed italic mb-8">
+          "Los sueños se cumplen mejor cuando se comparten. Te espero para crear recuerdos inolvidables juntos."
+        </p>
+      </div>
 
+      {/* Tarjeta con Degradado de 70vh */}
+      <div className="relative w-full max-w-sm h-[100vh] bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-3xl pt-20 pb-8 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-center">
+        
+        {/* Adorno superior de Limones (limones3.png) centrado sobresaliendo */}
+        <div className="absolute -top-12 sm:-top-16 left-1/2 -translate-x-1/2 w-full max-w-[220px] pointer-events-none z-10">
+          <img
+            src="/limones3.png"
+            alt="Adorno de limones"
+            className="w-full h-auto object-contain drop-shadow-md"
+          />
+        </div>
+
+        {/* Imagen centrada dentro de la tarjeta */}
+        <div className="relative w-full h-full max-h-[85%] rounded-2xl overflow-hidden shadow-md border border-[#e2d0ab]/40">
+          <img
+            src="/PHOTO-2.jpg" // Reemplaza por la ruta de tu foto
+            alt="Imagen centrada"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+  );
 }
