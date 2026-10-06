@@ -40,59 +40,64 @@ export default function PortadaSection() {
       {/* Capa de oscurecimiento suave para legibilidad */}
       <div className="absolute inset-0 bg-black/20 z-0" />
 
-      {/* Contenedor de la Placa (Sin fondo) */}
-      <div className="relative z-10 w-full flex justify-center items-center mt-[45vh] mb-4">
-        <img
-          src="/placa.png"
-          alt="Camila y Agustín"
-          className="w-[85vw] max-w-[320px] h-auto object-contain drop-shadow-2xl transition-transform duration-300"
-        />
-      </div>
+      {/* Contenedor Unificado (Asegura el mismo ancho máximo para la Placa y el Countdown) */}
+      <div className="relative z-10 w-full max-w-[340px] flex flex-col items-center mt-[40vh]">
+        
+        {/* Contenedor de la Placa */}
+        <div className="w-full flex justify-center mb-4">
+          <img
+            src="/placa.png"
+            alt="Camila y Agustín"
+            className="w-full h-auto object-contain drop-shadow-2xl transition-transform duration-300"
+          />
+        </div>
 
-      {/* Tarjeta del Countdown */}
-      <div className="relative z-10 w-full max-w-[340px]">
-        <p className="text-[11px] uppercase tracking-[0.2em] text-[#b39a69] font-bold mb-2.5">
-          Faltan muy pocos días
-        </p>
+        {/* Tarjeta del Countdown */}
+        <div className="w-full">
+          <p className="text-[11px] uppercase tracking-[0.2em] text-[#b39a69] font-bold mb-2.5">
+            Faltan muy pocos días
+          </p>
 
-        {/* Rejilla de tiempo optimizada para touch/celulares */}
-        <div className="grid grid-cols-4 gap-1.5">
-          <div className="flex flex-col items-center justify-center bg-white/70 py-2 rounded-xl border border-[#b39a69]/20">
-            <span className="text-xl sm:text-2xl font-black text-[#b39a69] leading-none">
-              {timeLeft.dias}
-            </span>
-            <span className="text-[9px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">
-              Días
-            </span>
-          </div>
+          {/* Rejilla de tiempo */}
+          <div className="grid grid-cols-4 gap-1.5 w-full">
+            <div className="flex flex-col items-center justify-center bg-white/70 py-2 rounded-xl border border-[#b39a69]/20">
+              <span className="text-xl sm:text-2xl font-black text-[#b39a69] leading-none">
+                {timeLeft.dias}
+              </span>
+              <span className="text-[9px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">
+                Días
+              </span>
+            </div>
 
-          <div className="flex flex-col items-center justify-center bg-white/70 py-2 rounded-xl border border-[#b39a69]/20">
-            <span className="text-xl sm:text-2xl font-black text-[#b39a69] leading-none">
-              {timeLeft.horas}
-            </span>
-            <span className="text-[9px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">
-              Hs
-            </span>
-          </div>
+            <div className="flex flex-col items-center justify-center bg-white/70 py-2 rounded-xl border border-[#b39a69]/20">
+              <span className="text-xl sm:text-2xl font-black text-[#b39a69] leading-none">
+                {timeLeft.horas}
+              </span>
+              <span className="text-[9px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">
+                Hs
+              </span>
+            </div>
 
-          <div className="flex flex-col items-center justify-center bg-white/70 py-2 rounded-xl border border-[#b39a69]/20">
-            <span className="text-xl sm:text-2xl font-black text-[#b39a69] leading-none">
-              {timeLeft.minutos}
-            </span>
-            <span className="text-[9px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">
-              Min
-            </span>
-          </div>
+            <div className="flex flex-col items-center justify-center bg-white/70 py-2 rounded-xl border border-[#b39a69]/20">
+              <span className="text-xl sm:text-2xl font-black text-[#b39a69] leading-none">
+                {timeLeft.minutos}
+              </span>
+              <span className="text-[9px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">
+                Min
+              </span>
+            </div>
 
-          <div className="flex flex-col items-center justify-center bg-white/70 py-2 rounded-xl border border-[#b39a69]/20">
-            <span className="text-xl sm:text-2xl font-black text-[#b39a69] leading-none">
-              {timeLeft.segundos}
-            </span>
-            <span className="text-[9px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">
-              Seg
-            </span>
+            <div className="flex flex-col items-center justify-center bg-white/70 py-2 rounded-xl border border-[#b39a69]/20">
+              <span className="text-xl sm:text-2xl font-black text-[#b39a69] leading-none">
+                {timeLeft.segundos}
+              </span>
+              <span className="text-[9px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">
+                Seg
+              </span>
+            </div>
           </div>
         </div>
+
       </div>
     </section>
   );
