@@ -65,7 +65,7 @@ export default function Celebracion() {
         </div>
 
         {/* Imagen de Limones Inferior (limones3.png) en la esquina inferior derecha */}
-        <div className="absolute -bottom-8 -right-6 w-36 sm:w-44 pointer-events-none z-10">
+        <div className="absolute -bottom-8 -right-4 w-36 sm:w-44 pointer-events-none z-10">
           <img
             src="/limones3.png"
             alt="Adorno de limones inferior"
