@@ -47,7 +47,7 @@ export default function PortadaSection() {
             src="/placa.png"
             alt="Camila y Agustín"
             /* translate-x-1.5 o translate-x-[6px] desplaza la imagen levemente a la derecha */
-            className="w-full h-auto block object-contain drop-shadow-2xl scale-[1.10] translate-x-2.5 transition-transform duration-300"
+            className="w-full h-auto block object-contain drop-shadow-2xl scale-[1.11] translate-x-2.5 transition-transform duration-300"
           />
         </div>
 
