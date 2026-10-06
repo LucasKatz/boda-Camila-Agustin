@@ -45,7 +45,7 @@ export default function PortadaSection() {
         <img
           src="/placa.png"
           alt="Camila y Agustín"
-          className="w-[85vw] max-w-[320px] h-auto object-contain drop-shadow-2xl transition-transform duration-300"
+          className="w-[85vw] max-w-[340px] h-auto object-contain drop-shadow-2xl transition-transform duration-300"
         />
       </div>
 
