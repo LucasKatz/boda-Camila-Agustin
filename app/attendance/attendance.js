@@ -29,7 +29,7 @@ export default function Attendance() {
           {/* Botón Asistiré */}
           <a
             href={`mailto:${email}?subject=${subject}&body=${body}`}
-            className="inline-block w-full max-w-[220px] bg-[#3b571f] hover:bg-[#2a3026] text-white font-serif tracking-wider text-lg py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform active:scale-95"
+            className="inline-block w-full max-w-[220px] bg-[#927FOD] hover:bg-[#2a3026] text-white font-serif tracking-wider text-lg py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform active:scale-95"
           >
             Asistiré
           </a>

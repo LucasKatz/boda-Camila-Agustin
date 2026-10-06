@@ -38,49 +38,50 @@ export default function PortadaSection() {
       {/* Capa de oscurecimiento suave */}
       <div className="absolute inset-0 bg-black/20 z-0" />
 
-      {/* Contenedor Principal con ancho exacto compartido */}
-      <div className="relative z-10 w-full max-w-[320px] sm:max-w-[340px] flex flex-col items-center mt-[40vh]">
+      {/* Contenedor Principal Unificado */}
+      <div className="relative z-10 w-full max-w-[340px] flex flex-col items-center mt-[40vh]">
         
-        {/* DIV Contenedor de la Placa ocupando el 100% del ancho */}
-        <div className="w-full mb-4">
+        {/* Contenedor de la Imagen */}
+        <div className="w-full flex justify-center items-center mb-4 overflow-visible">
           <img
             src="/placa.png"
             alt="Camila y Agustín"
-            className="w-full h-auto block object-cover drop-shadow-2xl transition-transform duration-300"
+            /* translate-x-1.5 o translate-x-[6px] desplaza la imagen levemente a la derecha */
+            className="w-full h-auto block object-contain drop-shadow-2xl scale-[1.12] translate-x-1.5 transition-transform duration-300"
           />
         </div>
 
         {/* Tarjeta del Countdown */}
         <div className="w-full">
-          <p className="text-[11px] uppercase tracking-[0.2em] text-[#b39a69] font-bold mb-3">
+          <p className="text-[11px] uppercase tracking-[0.2em] text-[#b39a69] font-bold mb-2.5">
             Faltan muy pocos días
           </p>
 
-          {/* Rejilla de 3 Columnas con mayor espaciado (gap-3) */}
-          <div className="grid grid-cols-3 gap-3 w-full">
-            <div className="flex flex-col items-center justify-center bg-white/75 py-2.5 rounded-xl border border-[#b39a69]/20 shadow-sm">
-              <span className="text-2xl sm:text-3xl font-black text-[#b39a69] leading-none">
+          {/* Rejilla de 3 Columnas */}
+          <div className="grid grid-cols-3 gap-2 w-full">
+            <div className="flex flex-col items-center justify-center bg-white/70 py-2.5 rounded-xl border border-[#b39a69]/20 shadow-sm">
+              <span className="text-xl sm:text-2xl font-black text-[#b39a69] leading-none">
                 {timeLeft.dias}
               </span>
-              <span className="text-[10px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">
+              <span className="text-[9px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">
                 Días
               </span>
             </div>
 
-            <div className="flex flex-col items-center justify-center bg-white/75 py-2.5 rounded-xl border border-[#b39a69]/20 shadow-sm">
-              <span className="text-2xl sm:text-3xl font-black text-[#b39a69] leading-none">
+            <div className="flex flex-col items-center justify-center bg-white/70 py-2.5 rounded-xl border border-[#b39a69]/20 shadow-sm">
+              <span className="text-xl sm:text-2xl font-black text-[#b39a69] leading-none">
                 {timeLeft.horas}
               </span>
-              <span className="text-[10px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">
+              <span className="text-[9px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">
                 Hs
               </span>
             </div>
 
-            <div className="flex flex-col items-center justify-center bg-white/75 py-2.5 rounded-xl border border-[#b39a69]/20 shadow-sm">
-              <span className="text-2xl sm:text-3xl font-black text-[#b39a69] leading-none">
+            <div className="flex flex-col items-center justify-center bg-white/70 py-2.5 rounded-xl border border-[#b39a69]/20 shadow-sm">
+              <span className="text-xl sm:text-2xl font-black text-[#b39a69] leading-none">
                 {timeLeft.minutos}
               </span>
-              <span className="text-[10px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">
+              <span className="text-[9px] uppercase tracking-wider text-[#101e3d] font-semibold mt-1">
                 Min
               </span>
             </div>
