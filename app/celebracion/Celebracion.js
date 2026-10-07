@@ -7,7 +7,7 @@ export default function Celebracion() {
       {/* Ícono de Fiesta / Lanzador de Confeti sobre el fondo blanco */}
       <div className="mb-6">
         <svg
-          className="w-40 h-40 text-[#000a48]"
+          className="w-14 h-14 text-[#000a48]"
           fill="none"
           stroke="currentColor"
           strokeWidth="1.5"
