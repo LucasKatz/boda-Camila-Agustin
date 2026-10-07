@@ -54,7 +54,7 @@ export default function Tiempo() {
         {/* Bloque Inferior: Horario con 33px */}
         <div className="w-full pt-2">
           <p className="text-[33px] font-serif tracking-wide text-[#000a48] leading-tight mb-2">
-            HORARIO: <span className="font-normal">18:45 hs</span>
+            HORARIO: 18:45 hs
           </p>
           <p className="text-base sm:text-lg font-serif tracking-wide text-[#000a48] leading-snug">
             Se pide puntualidad <br /> la ceremonia civil <br /> se celebrará en el salón
