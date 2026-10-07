@@ -2,9 +2,9 @@
 
 export default function DressCode() {
   return (
-    <section className="relative w-full bg-white flex items-center justify-center px-4 py-12 overflow-hidden">
-      {/* Tarjeta con Degradado */}
-      <div className="relative w-full max-w-sm min-h-[70vh] bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-3xl pt-24 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-center">
+    <section className="relative w-full bg-white flex items-center justify-center py-12 overflow-hidden">
+      {/* Tarjeta con Degradado - Ancho completo */}
+      <div className="relative w-full min-h-[70vh] bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-3xl pt-24 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-center">
         
         {/* Adorno de Limones (limones3.png) ubicado arriba a la derecha */}
         <div className="absolute -top-8 -right-4 w-36 sm:w-44 pointer-events-none z-10 overflow-visible">

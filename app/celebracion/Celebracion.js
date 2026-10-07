@@ -2,7 +2,7 @@
 
 export default function Celebracion() {
   return (
-    <section className="relative w-full bg-white flex flex-col items-center justify-center px-4 py-12 overflow-hidden">
+    <section className="relative w-full bg-white flex flex-col items-center justify-center py-12 overflow-hidden">
       
       {/* Ícono de Fiesta / Lanzador de Confeti sobre el fondo blanco */}
       <div className="mb-6">
@@ -42,8 +42,8 @@ export default function Celebracion() {
         </svg>
       </div>
 
-      {/* Tarjeta con Degradado */}
-      <div className="relative w-full max-w-sm bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-3xl pt-10 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center">
+      {/* Tarjeta con Degradado - Ancho completo */}
+      <div className="relative w-full bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-3xl pt-10 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center">
         
         {/* Encabezado dentro de la tarjeta */}
         <div className="mb-6">
@@ -56,11 +56,11 @@ export default function Celebracion() {
         </div>
 
         {/* Contenedor de la Foto de la pareja */}
-        <div className="relative w-full aspect-[4/5] rounded-2xl overflow-visible shadow-md border border-[#e2d0ab]/40">
+        <div className="relative w-full max-w-sm aspect-[4/5] rounded-2xl overflow-visible shadow-md border border-[#e2d0ab]/40">
           <img
             src="/PHOTO-1.jpg" 
             alt="Pareja"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-2xl"
           />
         </div>
 

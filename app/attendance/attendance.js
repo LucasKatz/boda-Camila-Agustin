@@ -6,9 +6,9 @@ export default function Attendance() {
   const body = encodeURIComponent("¡Hola! Confirmo mi asistencia para la celebración.");
 
   return (
-    <section className="relative w-full bg-white flex items-center justify-center px-4 py-12 overflow-hidden h-[110vh]">
-      {/* Tarjeta con Degradado */}
-      <div className="relative w-full max-w-sm min-h-[70vh] bg-gradient-to-b from-[#fbf5e0] via-[#f7e8ca] to-[#d7bf92] rounded-3xl pt-24 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-center">
+    <section className="relative w-full bg-white flex items-center justify-center py-12 overflow-hidden h-[110vh]">
+      {/* Tarjeta con Degradado - Ancho completo */}
+      <div className="relative w-full min-h-[70vh] bg-gradient-to-b from-[#fbf5e0] via-[#f7e8ca] to-[#d7bf92] rounded-3xl pt-24 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-center">
         
         {/* Adorno de Limones (limones2.png) ubicado arriba al centro */}
         <div className="absolute -top-16 w-36 sm:w-44 pointer-events-none z-10">
@@ -29,8 +29,7 @@ export default function Attendance() {
           {/* Botón Asistiré */}
           <a
             href={`mailto:${email}?subject=${subject}&body=${body}`}
-            className="inline-block w-full max-w-[180px] bg-[#000a48] hover:bg-[#283d20] text-white font-serif tetracking-wider uppercase py-3.5 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-
+            className="inline-block w-full max-w-[180px] bg-[#000a48] hover:bg-[#283d20] text-white font-serif tracking-wider uppercase py-3.5 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
           >
             Asistiré
           </a>

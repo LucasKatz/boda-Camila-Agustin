@@ -5,7 +5,7 @@ export default function Lugar() {
   const googleMapsUrl = 'https://maps.app.goo.gl/dAc5LxK2xMLVkb4c7'; 
 
   return (
-    <section className="relative w-full bg-white flex flex-col items-center justify-center px-4 py-16 overflow-hidden min-h-screen">
+    <section className="relative w-full bg-white flex flex-col items-center justify-center py-16 overflow-hidden min-h-screen">
       
       {/* Bloque Superior fuera de la Card */}
       <div className="flex flex-col items-center text-center mb-8 z-10">
@@ -38,8 +38,8 @@ export default function Lugar() {
         </h2>
       </div>
 
-      {/* Tarjeta con Degradado */}
-      <div className="relative w-full max-w-sm min-h-[75vh] bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-3xl pt-16 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-between">
+      {/* Tarjeta con Degradado - Ancho completo */}
+      <div className="relative w-full min-h-[75vh] bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-3xl pt-16 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-between">
         
         {/* Adorno superior de Limones (limones3.png) */}
         <div className="absolute -top-6 sm:-top-8 left-1/2 -translate-x-1/2 w-full max-w-[110px] pointer-events-none z-10">

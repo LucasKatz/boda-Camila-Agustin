@@ -2,9 +2,9 @@
 
 export default function Tiempo() {
   return (
-    <section className="relative w-full bg-white flex items-center justify-center px-4 py-12 overflow-hidden">
-      {/* Tarjeta con menos redondeo (rounded-xl) */}
-      <div className="relative w-full max-w-sm min-h-[70vh] bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-xl pt-24 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-between">
+    <section className="relative w-full bg-white flex items-center justify-center py-12 overflow-hidden">
+      {/* Tarjeta con menos redondeo (rounded-xl) - Ancho completo */}
+      <div className="relative w-full min-h-[70vh] bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-xl pt-24 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-between">
         
         {/* Adorno superior de Limones */}
         <div className="absolute -top-12 sm:-top-16 left-1/2 -translate-x-1/2 w-full max-w-[220px] pointer-events-none z-10">
@@ -53,7 +53,7 @@ export default function Tiempo() {
 
         {/* Bloque Inferior: Horario con 33px */}
         <div className="w-full pt-2">
-          <p className="text-[33px] font-serif tracking-wide text-[#000a48] leading-tight mb-2">
+          <p className="text-[30px] font-serif tracking-wide text-[#000a48] leading-tight mb-2">
             HORARIO:18:45 hs
           </p>
           <p className="text-base sm:text-lg font-serif tracking-wide text-[#000a48] leading-snug">

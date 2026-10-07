@@ -2,7 +2,7 @@
 
 export default function Dreams() {
   return (
-    <section className="relative w-full bg-white flex flex-col items-center justify-center px-4 py-12 overflow-hidden h-[150vh]">
+    <section className="relative w-full bg-white flex flex-col items-center justify-center py-12 overflow-hidden h-[150vh]">
       {/* Texto superior sobre el fondo blanco */}
       <div className="max-w-md text-center mb-10 px-2">
         <p className="text-xl sm:text-2xl font-serif text-[#000a48] leading-relaxed italic mb-8">
@@ -10,8 +10,8 @@ export default function Dreams() {
         </p>
       </div>
 
-      {/* Tarjeta con Degradado de 70vh */}
-      <div className="relative w-full max-w-sm h-[100vh] bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-3xl pt-20 pb-8 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-center">
+      {/* Tarjeta con Degradado de 70vh - Ancho completo */}
+      <div className="relative w-full h-[100vh] bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-3xl pt-20 pb-8 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-center">
         
         {/* Adorno superior de Limones (limones3.png) centrado sobresaliendo */}
         <div className="absolute -top-12 sm:-top-16 left-1/2 -translate-x-1/2 w-full max-w-[220px] pointer-events-none z-10">
