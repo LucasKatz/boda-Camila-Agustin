@@ -44,8 +44,8 @@ export default function Home() {
           {/* Botón inicial (los navegadores móviles bloquean el autoplay con sonido si el usuario no interactúa) */}
           {!hasStarted && (
             <div className="absolute z-20 flex flex-col items-center justify-center p-6 text-center text-white space-y-4">
-              <h1 className="text-3xl font-serif tracking-widest uppercase">Nuestra Boda</h1>
-              <p className="text-sm opacity-80">Toca el botón para ver la invitación</p>
+              <h1 className="text-3xl font-serif tracking-widest uppercase mb-6">Nuestra Boda</h1>
+              <p className="text-sm opacity-80 mb-6">Toca el botón para ver la invitación</p>
               <button
                 onClick={handleStart}
                 className="px-8 py-3 bg-white text-black font-semibold rounded-full shadow-lg hover:bg-opacity-90 transition transform active:scale-95"

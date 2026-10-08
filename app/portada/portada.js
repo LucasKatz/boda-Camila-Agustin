@@ -32,15 +32,15 @@ export default function PortadaSection() {
   return (
     <section
       id="portada"
-      className="relative w-full min-h-[100dvh] flex flex-col items-center justify-end pb-8 px-4 text-center bg-cover bg-center bg-no-repeat overflow-hidden"
-      style={{ backgroundImage: "url('/fondo1.jpeg')" }}
+      className="relative w-full min-h-[100dvh] flex flex-col items-center justify-end pb-8 px-4 text-center bg-cover bg-center bg-no-repeat  overflow-hidden"
+      style={{ backgroundImage: "url('/fondo3.jpeg')" }}
     >
       {/* Capa de oscurecimiento suave */}
       <div className="absolute inset-0 bg-black/20 z-0" />
 
       {/* Contenedor Principal Unificado */}
       <div className="relative z-10 w-full max-w-[340px] flex flex-col items-center mt-[40vh]">
-        
+
         {/* Contenedor de la Imagen */}
         <div className="w-full flex justify-center items-center mb-4 overflow-visible">
           <img

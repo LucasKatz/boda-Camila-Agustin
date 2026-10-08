@@ -18,7 +18,7 @@ export default function DressCode() {
         {/* Bloque Principal: Ícono, Título y Texto */}
         <div className="flex flex-col items-center w-full">
           {/* Ícono de Diamante (orientación correcta) */}
-          <div className="mb-3 mt-4">
+          <div className="mb-8 mt-4">
             <svg
               className="w-14 h-14 text-[#000a48]"
               fill="none"
@@ -41,7 +41,7 @@ export default function DressCode() {
           </div>
 
           {/* Título DRESS CODE */}
-          <h2 className="text-3xl sm:text-4xl font-serif tracking-widest text-[#000a48] uppercase mb-6">
+          <h2 className="text-3xl sm:text-4xl font-serif tracking-widest text-[#000a48] uppercase mb-12">
             DRESS CODE
           </h2>
 

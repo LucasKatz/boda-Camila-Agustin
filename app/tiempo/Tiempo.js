@@ -42,7 +42,7 @@ export default function Tiempo() {
 
           {/* Fecha y Día con 33px */}
           <div className="mb-2">
-            <p className="text-[33px] font-serif text-[#000a48] leading-tight">
+            <p className="text-xl font-serif text-[#000a48] leading-tight">
               11 de Diciembre 2026
             </p>
             <p className="text-lg font-serif text-[#000a48] mt-1 font-light italic">
@@ -53,7 +53,7 @@ export default function Tiempo() {
 
         {/* Bloque Inferior: Horario con 33px */}
         <div className="w-full pt-2">
-          <p className="text-[30px] font-serif tracking-wide text-[#000a48] leading-tight mb-2">
+          <p className="text-xl font-serif tracking-wide text-[#000a48] leading-tight mb-2">
             HORARIO:18:45 hs
           </p>
           <p className="text-base sm:text-lg font-serif tracking-wide text-[#000a48] leading-snug">
