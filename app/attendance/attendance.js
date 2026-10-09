@@ -2,8 +2,11 @@
 
 export default function Attendance() {
   const email = "camiceriani93@gmail.com";
-  const subject = encodeURIComponent("Confirmación de Asistencia");
-  const body = encodeURIComponent("¡Hola! Confirmo mi asistencia para la celebración.");
+  const subject = "Confirmación de Asistencia";
+  const body = "¡Hola! Confirmo mi asistencia para la celebración.";
+
+  // Construcción segura del enlace mailto
+  const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
   return (
     <section className="relative w-full bg-white flex items-center justify-center py-12 overflow-hidden h-[110vh]">
@@ -28,7 +31,9 @@ export default function Attendance() {
 
           {/* Botón Asistiré */}
           <a
-            href={`mailto:${email}?subject=${subject}&body=${body}`}
+            href={mailtoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block w-full max-w-[180px] bg-[#8c6d1f] hover:bg-[#283d20] text-white font-serif tracking-wider uppercase py-3.5 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
           >
             Asistiré
