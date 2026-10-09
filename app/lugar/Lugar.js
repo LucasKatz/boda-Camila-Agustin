@@ -38,7 +38,7 @@ export default function Lugar() {
         </h2>
       </div>
 
-      {/* Tarjeta con Degradado - Ancho completo */}
+      {/* Tarjeta con Degradado - Mantiene min-h-[75vh] */}
       <div className="relative w-full min-h-[75vh] bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-3xl pt-16 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-between">
         
         {/* Adorno superior de Limones (limones3.png) */}
@@ -50,32 +50,37 @@ export default function Lugar() {
           />
         </div>
 
-        {/* Texto de Ubicación dentro de la Card */}
-        <div className="flex flex-col items-center justify-center w-full my-auto space-y-2 py-8">
-          <p className="text-lg sm:text-xl font-serif text-[#000a48]">
-            Nombre del Salón:
-          </p>
-          <h3 className="text-2xl sm:text-3xl font-serif text-[#000a48] font-semibold pt-1 pb-2">
-            Simple Eventos
-          </h3>
-          <p className="text-base sm:text-lg font-serif text-[#000a48]">
-            Chivilcoy 452, Floresta
-          </p>
-          <p className="text-base sm:text-lg font-serif text-[#000a48]">
-            CABA
-          </p>
-        </div>
+        {/* Bloque central unificado (Texto + Botón pegados) */}
+        <div className="flex flex-col items-center justify-center w-full my-auto space-y-4">
+          
+          {/* Contenedor de Texto compacto */}
+          <div className="flex flex-col items-center space-y-1">
+            <p className="text-lg sm:text-xl font-serif text-[#000a48]">
+              Nombre del Salón:
+            </p>
+            <h3 className="text-2xl sm:text-3xl font-serif text-[#000a48] font-semibold py-0.5">
+              Simple Eventos
+            </h3>
+            <p className="text-base sm:text-lg font-serif text-[#000a48]">
+              Chivilcoy 452, Floresta
+            </p>
+            <p className="text-base sm:text-lg font-serif text-[#000a48]">
+              CABA
+            </p>
+          </div>
 
-        {/* Botón de Ubicación */}
-        <div className="w-full pt-4">
-          <Link
-            href={googleMapsUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block w-full max-w-[180px] bg-[#000a48] hover:bg-[#283d20] text-white font-serif text-sm tracking-wider uppercase py-3.5 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-          >
-            Cómo llegar
-          </Link>
+          {/* Botón de Ubicación en el mismo flujo */}
+          <div className="w-full pt-2">
+            <Link
+              href={googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block w-full max-w-[180px] bg-[#8c6d1f] hover:bg-[#283d20] text-white font-serif text-sm tracking-wider uppercase py-3.5 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              Cómo llegar
+            </Link>
+          </div>
+
         </div>
 
         {/* Adorno inferior de Limones (limones2.png) */}
