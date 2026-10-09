@@ -6,7 +6,7 @@ export default function Dreams() {
       {/* Texto superior sobre el fondo blanco */}
       <div className="max-w-md text-center mb-10 px-2">
         <p className="text-xl sm:text-2xl font-serif text-[#000a48] leading-relaxed italic mb-8">
-          "Los sueños se cumplen mejor cuando se comparten. Te espero para crear recuerdos inolvidables juntos."
+          "Los sueños se cumplen mejor <br></br> cuando se comparten. <br></br>Te espero para crear recuerdos<br></br> inolvidables juntos."
         </p>
       </div>
 

@@ -17,7 +17,7 @@ export default function Espera() {
         </div>
 
         {/* Mensaje Final */}
-        <h2 className="text-3xl sm:text-4xl font-serif text-[#000a48] italic tracking-wide">
+        <h2 className="text-2xl sm:text-4xl font-serif text-[#000a48] italic tracking-wide mt-4">
           ¡Los esperamos!
         </h2>
 

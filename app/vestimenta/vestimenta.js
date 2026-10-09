@@ -7,7 +7,7 @@ export default function DressCode() {
       <div className="relative w-full min-h-[70vh] bg-gradient-to-b from-[#fbf4e2] via-[#f7e8ca] to-[#e8d2a7] rounded-3xl pt-24 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-center">
         
         {/* Adorno de Limones (limones3.png) ubicado arriba a la derecha */}
-        <div className="absolute -top-8 -right-4 w-36 sm:w-44 pointer-events-none z-10 overflow-visible">
+        <div className="absolute -top-8 - w-36 sm:w-44 pointer-events-none z-10 overflow-visible">
           <img
             src="/limones3.png"
             alt="Adorno de limones"
@@ -50,7 +50,7 @@ export default function DressCode() {
             Elegante Sport
           </div>
           <p className="text-lg font-serif text-[#000a48] mt-2 font-light italic max-w-[240px]">
-            ¡Animate a ponerte algo de color!
+            ¡Animate a ponerte<br></br> algo de color!
           </p>
         </div>
       </div>

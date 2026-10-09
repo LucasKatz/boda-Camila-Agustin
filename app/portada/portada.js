@@ -53,7 +53,7 @@ export default function PortadaSection() {
 
         {/* Tarjeta del Countdown */}
         <div className="w-full">
-          <p className="text-[11px] uppercase tracking-[0.2em] text-[#b39a69] font-bold mb-2.5">
+          <p className="text-[11px] uppercase tracking-[0.2em] text-white font-bold mb-2.5">
             Faltan muy pocos días
           </p>
 
