@@ -12,7 +12,7 @@ export default function Lugar() {
         {/* Ícono de Ubicación */}
         <div className="mb-2">
           <svg
-            className="w-14 h-14 text-[#354f2a]"
+            className="w-14 h-14 text-[#000a48]"
             fill="none"
             stroke="currentColor"
             strokeWidth="1.5"
@@ -33,7 +33,7 @@ export default function Lugar() {
         </div>
 
         {/* Título ¿DÓNDE? */}
-        <h2 className="text-3xl sm:text-4xl font-serif tracking-widest text-[#3b571f] uppercase">
+        <h2 className="text-3xl sm:text-4xl font-serif tracking-widest text-[#000a48] uppercase">
           ¿DÓNDE?
         </h2>
       </div>
@@ -52,16 +52,16 @@ export default function Lugar() {
 
         {/* Texto de Ubicación dentro de la Card */}
         <div className="flex flex-col items-center justify-center w-full my-auto space-y-2 py-8">
-          <p className="text-lg sm:text-xl font-serif text-[#3b571f]">
+          <p className="text-lg sm:text-xl font-serif text-[#000a48]">
             Nombre del Salón:
           </p>
-          <h3 className="text-2xl sm:text-3xl font-serif text-[#3b571f] font-semibold pt-1 pb-2">
+          <h3 className="text-2xl sm:text-3xl font-serif text-[#000a48] font-semibold pt-1 pb-2">
             Simple Eventos
           </h3>
-          <p className="text-base sm:text-lg font-serif text-[#3b571f]">
+          <p className="text-base sm:text-lg font-serif text-[#000a48]">
             Chivilcoy 452, Floresta
           </p>
-          <p className="text-base sm:text-lg font-serif text-[#3b571f]">
+          <p className="text-base sm:text-lg font-serif text-[#000a48]">
             CABA
           </p>
         </div>

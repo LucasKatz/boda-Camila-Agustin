@@ -33,7 +33,7 @@ export default function PortadaSection() {
     <section
       id="portada"
       className="relative w-full min-h-[100dvh] flex flex-col items-center justify-end pb-8 px-4 text-center bg-cover bg-center bg-no-repeat  overflow-hidden"
-      style={{ backgroundImage: "url('/fondo3.jpeg')" }}
+      style={{ backgroundImage: "url('/portada4.jpg')" }}
     >
       {/* Capa de oscurecimiento suave */}
       <div className="absolute inset-0 bg-black/20 z-0" />

@@ -22,7 +22,7 @@ export default function Attendance() {
         {/* Bloque Principal */}
         <div className="flex flex-col items-center w-full">
           {/* Título CONFIRMAR ASISTENCIA */}
-          <h2 className="text-3xl sm:text-4xl font-serif tracking-widest text-[#3b571f] uppercase mb-8">
+          <h2 className="text-3xl sm:text-4xl font-serif tracking-widest text-[#000a48] uppercase mb-8">
             CONFIRMAR ASISTENCIA
           </h2>
 
