@@ -16,12 +16,12 @@ export default function Attendance() {
   const outlookUrl = `https://outlook.live.com/mail/0/deeplink/compose?to=${email}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
   return (
-    <section className="relative w-full bg-white flex items-center justify-center py-12 overflow-hidden h-[110vh]">
+    <section className="relative w-full bg-white flex items-center justify-center   ">
       {/* Tarjeta con Degradado - Ancho completo */}
       <div className="relative w-full min-h-[70vh] bg-gradient-to-b from-[#fbf5e0] via-[#f7e8ca] to-[#d7bf92] rounded-3xl pt-24 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-center">
         
         {/* Adorno de Limones (limones2.png) ubicado arriba al centro */}
-        <div className="absolute -top-16 w-36 sm:w-44 pointer-events-none z-10">
+        <div className="absolute -top-12 w-36 sm:w-44 pointer-events-none z-10 overflow-visible">
           <img
             src="/limones2.png"
             alt="Adorno de limones"

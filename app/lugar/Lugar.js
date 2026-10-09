@@ -5,7 +5,7 @@ export default function Lugar() {
   const googleMapsUrl = 'https://maps.app.goo.gl/dAc5LxK2xMLVkb4c7'; 
 
   return (
-    <section className="relative w-full bg-white flex flex-col items-center justify-center py-16 overflow-hidden min-h-screen">
+    <section className="relative w-full bg-white flex flex-col items-center justify-center  overflow-hidden min-h-screen">
       
       {/* Bloque Superior fuera de la Card */}
       <div className="flex flex-col items-center text-center mb-8 z-10">

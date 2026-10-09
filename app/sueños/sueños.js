@@ -2,7 +2,7 @@
 
 export default function Dreams() {
   return (
-    <section className="relative w-full bg-white flex flex-col items-center justify-center py-12 overflow-hidden h-[150vh]">
+    <section className="relative w-full bg-white flex flex-col items-center justify-center  overflow-hidden ">
       {/* Texto superior sobre el fondo blanco */}
       <div className="max-w-md text-center mb-10 px-2">
         <p className="text-xl sm:text-2xl font-serif text-[#000a48] leading-relaxed italic mb-8">
