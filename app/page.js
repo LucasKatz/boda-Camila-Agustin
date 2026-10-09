@@ -68,11 +68,11 @@ export default function Home() {
         <div className="fixed inset-0 z-50 bg-[#000a48] flex items-center justify-center overflow-hidden">
           {!hasStarted && (
             <div className="absolute z-20 flex flex-col items-center justify-center p-6 text-center text-white space-y-4">
-              <h1 className="text-3xl font-serif tracking-widest uppercase mb-6">Nuestra Boda</h1>
+              <h1 className="text-3xl text-[#b39a69] font-serif tracking-widest uppercase mb-6">Nuestra Boda</h1>
               <p className="text-sm opacity-80 mb-6">Toca el botón para ver la invitación</p>
               <button
                 onClick={handleStart}
-                className="px-8 py-3 bg-white text-black font-semibold rounded-full shadow-lg hover:bg-opacity-90 transition transform active:scale-95"
+                className="px-8 py-3 bg-[#b39a69] text-[#000a48] font-semibold rounded-full shadow-lg hover:bg-opacity-90 transition transform active:scale-95"
               >
                 Ver Invitación
               </button>
@@ -125,35 +125,35 @@ export default function Home() {
             <PortadaSection />
           </section>
 
-          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
+          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6  text-center bg-white">
             <Tiempo />
           </section>
 
-          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
+          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6  text-center bg-white">
             <Lugar />
           </section>
 
-          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
+          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6  text-center bg-white">
             <Gifts />
           </section>
 
-          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
+          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6  text-center bg-white">
             <Celebracion />
           </section>
 
-          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
+          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6  text-center bg-white">
             <DressCode />
           </section>
 
-          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
+          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6  text-center bg-white">
             <Dreams />
           </section>
 
-          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
+          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6  text-center bg-white">
             <Attendance />
           </section>
 
-          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-white">
+          <section id="detalles" className="min-h-screen flex flex-col items-center justify-center px-6  text-center bg-white">
             <Espera />
           </section>
         </div>
