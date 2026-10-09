@@ -40,7 +40,7 @@ export default function Home() {
     <main className="min-h-screen bg-slate-50 text-slate-800 font-sans">
       {!showMainContent ? (
         /* --- PANTALLA INTRO / VIDEO --- */
-        <div className="fixed inset-0 z-50 bg-black flex items-center justify-center overflow-hidden">
+        <div className="fixed inset-0 z-50 bg-[#000a48] flex items-center justify-center overflow-hidden">
           {/* Botón inicial (los navegadores móviles bloquean el autoplay con sonido si el usuario no interactúa) */}
           {!hasStarted && (
             <div className="absolute z-20 flex flex-col items-center justify-center p-6 text-center text-white space-y-4">
