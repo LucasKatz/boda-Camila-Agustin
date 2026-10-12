@@ -57,7 +57,7 @@ export default function Tiempo() {
             HORARIO: 18:45 hs
           </p>
           <p className="text-base sm:text-lg font-serif tracking-wide text-[#000a48] leading-snug">
-            Se pide puntualidad <br /> la Ceremonia Civil <br /> se celebrará en el salón
+            Se pide puntualidad <br /> la Ceremonia Civil <br /> se celebrará en el salón.
           </p>
         </div>
       </div>
