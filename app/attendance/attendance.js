@@ -6,22 +6,25 @@ export default function Attendance() {
   const [isOpen, setIsOpen] = useState(false);
 
   const email = "camiceriani93@gmail.com";
-  const subject = "Confirmación de Asistencia";
-  const body = "¡Hola! Confirmo mi asistencia para la celebración.";
+  const subject = encodeURIComponent("Confirmación de Asistencia");
+  const body = encodeURIComponent("¡Hola! Confirmo mi asistencia para la celebración.");
 
-  // URL para Gmail Web
-  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  // Enlace universal (Abre la app de correo predeterminada del celular)
+  const defaultMailUrl = `mailto:${email}?subject=${subject}&body=${body}`;
 
-  // URL para Outlook Web / Hotmail
-  const outlookUrl = `https://outlook.live.com/mail/0/deeplink/compose?to=${email}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  // Deep Link para la App de Gmail en móviles
+  const gmailAppUrl = `googlegmail://co?to=${email}&subject=${subject}&body=${body}`;
+
+  // Deep Link para la App de Outlook en móviles
+  const outlookAppUrl = `ms-outlook://compose?to=${email}&subject=${subject}&body=${body}`;
 
   return (
-    <section className="relative w-full bg-white flex items-center justify-center   ">
+    <section className="relative w-full bg-white flex items-center justify-center pt-12">
       {/* Tarjeta con Degradado - Ancho completo */}
       <div className="relative w-full min-h-[70vh] bg-gradient-to-b from-[#fbf5e0] via-[#f7e8ca] to-[#d7bf92] rounded-3xl pt-24 pb-12 px-6 shadow-xl text-center border border-[#e2d0ab]/50 flex flex-col items-center justify-center">
         
         {/* Adorno de Limones (limones2.png) ubicado arriba al centro */}
-        <div className="absolute -top-12 w-36 sm:w-44 pointer-events-none z-10 overflow-visible">
+        <div className="absolute -top-12 sm:-top-16 left-1/2 -translate-x-1/2 w-36 sm:w-44 pointer-events-none z-20">
           <img
             src="/limones2.png"
             alt="Adorno de limones"
@@ -36,7 +39,7 @@ export default function Attendance() {
             CONFIRMAR ASISTENCIA
           </h2>
 
-          {/* Botón que abre el selector de correo */}
+          {/* Botón que abre el modal de confirmación */}
           <button
             onClick={() => setIsOpen(true)}
             className="inline-block w-full max-w-[180px] bg-[#8c6d1f] hover:bg-[#283d20] text-white font-serif tracking-wider uppercase py-3.5 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
@@ -46,7 +49,7 @@ export default function Attendance() {
         </div>
       </div>
 
-      {/* Modal Emergente con las Opciones estilizadas */}
+      {/* Modal Emergente con opciones para aplicaciones móviles */}
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#000a48]/30 backdrop-blur-sm p-4">
           <div className="relative w-full max-w-sm bg-gradient-to-b from-[#fbf5e0] via-[#f7e8ca] to-[#d7bf92] rounded-3xl p-8 shadow-2xl border border-[#e2d0ab] text-center flex flex-col items-center">
@@ -60,34 +63,39 @@ export default function Attendance() {
             </button>
 
             <h3 className="text-xl font-serif text-[#000a48] uppercase tracking-widest mb-3">
-              SELECCIONA TU CORREO
+              CONFIRMAR ASISTENCIA
             </h3>
             
             <p className="text-sm font-serif text-[#000a48]/80 mb-6 leading-relaxed">
-              ¿Desde qué plataforma deseas enviarnos la confirmación?
+              Selecciona tu aplicación de correo para enviar la confirmación:
             </p>
 
             <div className="flex flex-col gap-3.5 w-full">
-              {/* Opción Gmail */}
+              {/* Opción App de Gmail */}
               <a
-                href={gmailUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={gmailAppUrl}
                 onClick={() => setIsOpen(false)}
                 className="w-full bg-[#8c6d1f] hover:bg-[#283d20] text-white font-serif tracking-wider uppercase py-3 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
               >
-                Abrir en Gmail
+                Abrir App de Gmail
               </a>
 
-              {/* Opción Outlook */}
+              {/* Opción App de Outlook */}
               <a
-                href={outlookUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={outlookAppUrl}
                 onClick={() => setIsOpen(false)}
                 className="w-full bg-[#8c6d1f] hover:bg-[#283d20] text-white font-serif tracking-wider uppercase py-3 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
               >
-                Abrir en Outlook
+                Abrir App de Outlook
+              </a>
+
+              {/* Opción Correo Predeterminado / Mail de iPhone */}
+              <a
+                href={defaultMailUrl}
+                onClick={() => setIsOpen(false)}
+                className="w-full bg-[#000a48] hover:bg-[#283d20] text-white font-serif tracking-wider uppercase py-3 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
+              >
+                App de Correo Predeterminada
               </a>
             </div>
           </div>
