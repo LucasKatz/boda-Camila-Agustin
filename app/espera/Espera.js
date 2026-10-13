@@ -5,7 +5,7 @@ export default function Espera() {
     <section className="relative w-full bg-white flex flex-col items-center justify-center overflow-hidden text-center">
 
       {/* Tarjeta con Degradado - Alineación hacia arriba (justify-start) y padding superior ajustado */}
-      <div className="relative w-full min-h-[90vh] bg-gradient-to-b from-[#e8d2a7] via-[#f7e8ca] to-[#fbf4e2] rounded-3xl px-6 pt-8 pb-16 shadow-xl border border-[#e2d0ab]/50 flex flex-col items-center justify-start gap-6">
+      <div className="relative w-full min-h-[90vh] bg-gradient-to-b from-[#e8d2a7] via-[#f7e8ca] to-white rounded-3xl px-6 pt-8 pb-16 shadow-xl border border-[#e2d0ab]/50 flex flex-col items-center justify-start gap-6">
 
         {/* Contenedor de la Imagen Centrada (placa2.png) */}
         <div className="relative w-full max-w-md mt-16">
