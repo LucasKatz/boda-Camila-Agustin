@@ -54,7 +54,7 @@ export default function Gifts() {
         {/* Bloque Inferior: Alias */}
         <div className="w-full pt-6">
           <p className="text-xl sm:text-2xl font-serif text-[#000a48]">
-            Alias: <span className="underline font-normal">agusycamis.mp</span>
+            Alias: <span className="underline font-normal"> bodacya.mp</span>
           </p>
         </div>
 

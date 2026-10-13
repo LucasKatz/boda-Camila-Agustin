@@ -25,6 +25,7 @@ export default function Home() {
     setHasStarted(true);
 
     if (videoRef.current) {
+      videoRef.current.currentTime = 0;
       videoRef.current.play().catch((err) => console.log('Error video:', err));
     }
 
@@ -41,7 +42,7 @@ export default function Home() {
     setIsFadingOut(true); // Empieza a difuminar la pantalla de intro
     setTimeout(() => {
       setShowMainContent(true); // Oculta definitivamente la intro del DOM
-    }, 3000); // 1000ms = coincide con duration-1000
+    }, 3000); // 3000ms = coincide con duration-3000
   };
 
   const handleVideoEnd = () => {
@@ -94,14 +95,15 @@ export default function Home() {
             </div>
           )}
 
+          {/* El elemento de video está montado pero invisible/bloqueado hasta que presiones el botón */}
           <video
             ref={videoRef}
             src="/intro.mp4"
             muted
             playsInline
             onEnded={handleVideoEnd}
-            className={`w-full h-full object-cover transition-opacity duration-700 ${
-              hasStarted ? 'opacity-100' : 'opacity-20'
+            className={`w-full h-full object-cover transition-opacity duration-500 ${
+              hasStarted ? 'opacity-100 relative z-10' : 'opacity-0 pointer-events-none'
             }`}
           />
 
